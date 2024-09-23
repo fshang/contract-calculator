@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "合同金额计算器",
+  "version": "1.0",
+  "description": "计算合同金额、付款比例和税后金额",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>合同金额计算器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>合同金额计算器</h1>
+        <div class="input-section">
+            <div class="input-group">
+                <label for="contractAmount">合同金额：</label>
+                <input type="number" id="contractAmount" step="0.01" min="0">
+            </div>
+            <div class="input-group">
+                <label for="taxRate">税率：</label>
+                <input type="number" id="taxRate" step="0.01" min="0" max="100">%
+            </div>
+        </div>
+        <div id="paymentRatios">
+            <div class="input-group">
+                <label for="paymentRatio1">付款比例 1：</label>
+                <input type="number" class="paymentRatio" step="0.01" min="0" max="100">%
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="addRatio">添加付款比例</button>
+            <button id="calculate">计算</button>
+            <button id="export" style="display: none;">导出结果</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
